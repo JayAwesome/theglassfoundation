@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>THE GLASS FOUNDATION | Age with Grace Abuja</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --glass-purple: #8e44ad;
+            --glass-gold: #d4af37;
+            --glass-green: #2d5a27;
+            --glass-black: #1a1a1a;
+            --glass-white: #ffffff;
+            --light-cream: #f4f1ea;
+        }
+
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: 'Inter', sans-serif; line-height: 1.6; color: #333; scroll-behavior: smooth; background: var(--glass-white); }
+
+        /* Distinguished Navigation */
+        nav {
+            display: flex; justify-content: space-between; align-items: center;
+            padding: 20px 8%; background: #fff; position: sticky; top: 0; z-index: 1000;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+            border-bottom: 4px solid var(--glass-gold);
+        }
+        .logo-text { font-family: 'Playfair Display', serif; font-size: 1.2rem; font-weight: 900; line-height: 1; text-transform: uppercase; }
+        .logo-text .purple { color: var(--glass-purple); }
+        .logo-text .gold { color: var(--glass-gold); }
+        
+        nav ul { display: flex; list-style: none; gap: 25px; align-items: center; }
+        nav a { text-decoration: none; color: var(--glass-black); font-weight: 700; font-size: 0.85rem; text-transform: uppercase; }
+        .btn-cta { background: var(--glass-purple); color: #fff !important; padding: 12px 24px; border-radius: 4px; transition: 0.3s; }
+
+        /* Pronounced Hero Section */
+        .hero {
+            height: 85vh; background: var(--glass-black); color: #fff;
+            display: flex; flex-direction: column; justify-content: center; align-items: center;
+            text-align: center; padding: 0 10%;
+        }
+        .hero h1 { 
+            font-family: 'Playfair Display', serif; font-weight: 900; font-size: clamp(3rem, 8vw, 6.5rem); 
+            line-height: 0.85; text-transform: uppercase; 
+            background: linear-gradient(to bottom, #fff 60%, var(--glass-gold));
+            -webkit-background-clip: text; -webkit-text-fill-color: transparent;
+        }
+        .hero h1 span.with { font-size: 1.5rem; -webkit-text-fill-color: var(--glass-purple); display: block; margin: 15px 0; letter-spacing: 10px; }
+
+        /* Partnership Section */
+        .partnership-box { 
+            background: var(--glass-black); color: #fff; padding: 60px 10%; 
+            display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 30px;
+            margin-top: -50px; position: relative; width: 85%; margin-left: auto; margin-right: auto;
+            border-radius: 8px; border-bottom: 5px solid var(--glass-gold);
+        }
+        .btn-outline { border: 2px solid var(--glass-gold); color: var(--glass-gold); padding: 15px 30px; text-decoration: none; font-weight: bold; text-transform: uppercase; }
+
+        /* Identity Showcase (The T-Shirts) */
+        .identity { padding: 100px 10%; background: var(--light-cream); text-align: center; }
+        .merch-grid { display: flex; justify-content: center; gap: 40px; flex-wrap: wrap; margin-top: 50px; }
+        .merch-item img { width: 380px; border-radius: 8px; box-shadow: 0 20px 40px rgba(0,0,0,0.2); }
+        .merch-item p { margin-top: 20px; font-weight: 800; text-transform: uppercase; color: var(--glass-purple); }
+
+        /* Vision & Mission */
+        .vision-mission { padding: 100px 10%; display: grid; grid-template-columns: 1fr 1fr; gap: 60px; }
+        .vm-card { margin-bottom: 30px; padding-left: 20px; border-left: 4px solid var(--glass-purple); }
+
+        /* Enrollment Section */
+        .enroll-section { padding: 100px 10%; background: #fff; }
+        .enroll-container { max-width: 1100px; margin: auto; display: grid; grid-template-columns: 1fr 1.5fr; gap: 50px; }
+        .contact-info-box { background: var(--light-cream); padding: 30px; border-radius: 8px; }
+        .enroll-form { padding: 20px; }
+        .enroll-form input, .enroll-form select, .enroll-form textarea { width: 100%; padding: 15px; margin-bottom: 15px; border: 1px solid #ddd; border-radius: 4px; }
+        .submit-btn { background: var(--glass-black); color: #fff; border: none; padding: 18px; width: 100%; font-weight: 800; cursor: pointer; text-transform: uppercase; }
+
+        footer { background: var(--glass-black); color: #666; padding: 80px 10%; text-align: center; }
+        .whatsapp-float { position: fixed; bottom: 20px; right: 20px; background: #25d366; color: white; padding: 15px 25px; border-radius: 50px; text-decoration: none; font-weight: bold; box-shadow: 0 5px 15px rgba(0,0,0,0.2); z-index: 1000; }
+
+        @media (max-width: 900px) {
+            .vision-mission, .enroll-container, .partnership-box { grid-template-columns: 1fr; }
+            .hero h1 { font-size: 3.5rem; }
+        }
+    </style>
+</head>
+<body>
+
+    <a href="https://wa.me/2348061695051" class="whatsapp-float" target="_blank">Chat on WhatsApp</a>
+
+    <nav>
+        <div class="logo-text">
+            <span class="purple">THE GLASS</span><br>
+            <span class="gold">FOUNDATION</span>
+        </div>
+        <ul>
+            <li><a href="#about">The Foundation</a></li>
+            <li><a href="#identity">Project Identity</a></li>
+            <li><a href="#enroll">Enrollment</a></li>
+            <li><a href="#enroll" class="btn-cta">Visit Center</a></li>
+        </ul>
+    </nav>
+
+    <header class="hero">
+        <p style="color: var(--glass-gold); font-weight: 800; letter-spacing: 4px;">ABUJA'S PREMIER CARE CENTER</p>
+        <h1>AGE<span class="with">WITH</span>GRACE</h1>
+        <p style="margin-top: 20px; color: #aaa;">Golden Life Advancement and Support Services</p>
+    </header>
+
+    <section class="partnership-box">
+        <div>
+            <h3 style="font-family: 'Playfair Display', serif; font-size: 1.8rem;">Executive Partnership</h3>
+            <p style="color: #aaa;">Advocating for senior rights and quality aging in Nigeria.</p>
+        </div>
+        <a href="#" class="btn-outline">Executive Summary (PDF)</a>
+    </section>
+
+    <section id="about" class="vision-mission">
+        <div>
+            <h2 style="font-family: 'Playfair Display', serif; font-size: 3rem;">Dignity In Every <span style="color: var(--glass-gold);">Stage.</span></h2>
+            <p style="margin-top: 20px;">The GLASS Foundation provides a standard of excellence for senior citizens in the FCT.</p>
+        </div>
+        <div>
+            <div class="vm-card">
+                <h4 style="color: var(--glass-purple); text-transform: uppercase;">Vision</h4>
+                <p>To create a Nigeria where every senior citizen lives a life of dignity, health, and social fulfillment.</p>
+            </div>
+            <div class="vm-card">
+                <h4 style="color: var(--glass-purple); text-transform: uppercase;">Mission</h4>
+                <p>Elevating adult care through specialized support, social inclusion, and robust policy advocacy.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="identity" class="identity">
+        <h2 style="font-family: 'Playfair Display', serif; font-size: 2.5rem;">Visual Identity</h2>
+        <div class="merch-grid">
+            <div class="merch-item">
+                <img src="2025_12_11_09_22_IMG_6059.JPG" alt="Black Uniform">
+                <p>Advocacy Team Uniform</p>
+            </div>
+            <div class="merch-item">
+                <img src="2025_12_11_09_22_IMG_6060.JPG" alt="White Uniform">
+                <p>Care Team Uniform</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="enroll" class="enroll-section">
+        <div class="enroll-container">
+            <div class="contact-info-box">
+                <h2 style="font-family: 'Playfair Display', serif; margin-bottom: 20px;">Get in Touch</h2>
+                <p style="margin-bottom: 20px;">Speak with our team to discuss care plans or volunteer opportunities.</p>
+                <p><strong>Primary Contact:</strong> +234 806 169 5051</p>
+                <p><strong>Secondary Line:</strong> +234 706 096 5237</p>
+                <p style="margin-top: 20px;"><strong>Location:</strong> Abuja, FCT, Nigeria</p>
+            </div>
+            <div class="enroll-form">
+                <form id="enrollment-form">
+                    <input type="text" name="user_name" placeholder="Full Name" required>
+                    <input type="email" name="user_email" placeholder="Email Address" required>
+                    <select name="subject">
+                        <option>Enroll a Parent/Senior</option>
+                        <option>Join the Team (Staff/Volunteer)</option>
+                        <option>Corporate Partnership</option>
+                    </select>
+                    <textarea name="message" rows="4" placeholder="How can the GLASS Foundation assist you?"></textarea>
+                    <button type="submit" class="submit-btn">Send Inquiry</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div style="font-family: 'Playfair Display', serif; font-size: 1.5rem; color: #fff; margin-bottom: 10px;">THE GLASS FOUNDATION</div>
+        <p>Golden Life Advancement and Support Services</p>
+        <p style="margin-top: 30px;">&copy; 2026 | Abuja, Nigeria</p>
+    </footer>
+
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script type="text/javascript">
+        (function(){
+            emailjs.init("YOUR_PUBLIC_KEY");
+        })();
+        document.getElementById('enrollment-form').addEventListener('submit', function(event) {
+            event.preventDefault();
+            emailjs.sendForm('YOUR_SERVICE_ID', 'YOUR_TEMPLATE_ID', this)
+                .then(function() { alert('Inquiry Sent! We will contact you shortly.'); }, function(error) { alert('Failed to send. Please call us directly.'); });
+        });
+    </script>
+</body>
+</html>
